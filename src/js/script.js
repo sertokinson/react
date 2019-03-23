@@ -1,12 +1,29 @@
-class HelloWorld extends React.Component {
-    render() {
-        return React.createElement(
-            'h1',
-            null,
-            'Hello ',
-            this.props.name
-        );
+class HelloWorld extends  React.Component{
+    render(){
+        return <h1>Hello {this.props.name}</h1>
+    }
+}
+class Clock extends React.Component{
+    constructor(props){
+        super(props);
+        this.state={
+            time:(new Date).toLocaleTimeString()
+        };
+        this.updateTime();
+    }
+    updateTime(){
+        setInterval(()=>{
+            this.setState({
+                time:(new Date).toLocaleTimeString()
+            })
+        },1000)
+    }
+    render(){
+        return <h1>{this.state.time}</h1>
     }
 }
 
-ReactDOM.render(React.createElement(HelloWorld, { name: 'Sergey' }), document.getElementById('content'));
+ReactDOM.render(
+    <Clock />,
+    document.getElementById('content')
+);
