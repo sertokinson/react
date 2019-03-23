@@ -1,5 +1,5 @@
 learnreact.iml
 .idea/
-src/main/app/node_modules
-src/main/app/package-lock.json
-src/main/app/dist
+node_modules
+package-lock.json
+dist
