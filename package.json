@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "author": "Stakhanov Sergey",
   "scripts": {
-    "watch": "babel src/js -d src/dist --plugins transform-object-rest-spread --presets env -w"
+    "watch": "babel src/js -d src/dist/ --plugins transform-object-rest-spread --presets env -w"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

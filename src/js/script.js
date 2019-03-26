@@ -39,6 +39,7 @@ class Clock extends React.Component {
     }
 }
 
+
 let second = 5;
 setInterval(() => {
     if (second === 0) {
