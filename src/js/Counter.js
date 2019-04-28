@@ -11,6 +11,7 @@ class Counter extends React.Component {
             <div>
                 <Button onClick={() => this.setState({counter: ++this.state.counter})}/>
                 <Text counter={this.state.counter}/>
+                <input onChange={(event)=>console.log(event.target.value)}/>
             </div>
         )
     }
