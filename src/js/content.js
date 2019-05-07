@@ -1,3 +1,6 @@
+const React = require('react');
+const ReactDOM = require ('react-dom');
+
 class HelloWorld extends React.Component {
     render() {
         return React.createElement('h1',null,`Hello ${this.props.name}!`)
